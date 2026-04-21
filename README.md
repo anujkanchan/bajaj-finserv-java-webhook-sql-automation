@@ -89,3 +89,146 @@ mvn spring-boot:run
 
 **Anuj Ganesh Kanchan**
 Java Backend Developer | Spring Boot Enthusiast
+
+
+Actual Steps :
+
+
+# 🚀 Bajaj Finserv Webhook SQL Automation (Spring Boot)
+
+## 📌 Project Overview
+
+This project is a Spring Boot application that:
+
+* Generates a webhook using an API
+* Receives an access token
+* Solves a SQL query
+* Submits the result automatically via REST API
+
+---
+
+## 🛠️ Tech Stack
+
+* Java 17+
+* Spring Boot
+* Maven
+* RestTemplate
+* SQL
+
+---
+
+## ⚙️ Step-by-Step Flow
+
+### 1️⃣ Project Setup (Spring Initializer)
+
+Create project using:
+
+* Spring Boot Starter Web
+* Maven Project
+* Java 17+
+
+Import into IDE (IntelliJ / Eclipse)
+
+---
+
+### 2️⃣ Project Structure
+
+src/main/java/com/example/demo
+├── DemoApplication.java
+└── service
+└── ApiService.java
+
+---
+
+### 3️⃣ Dependency Injection Setup
+
+* Use constructor-based injection for RestTemplate
+* Define RestTemplate bean in main class
+
+---
+
+### 4️⃣ API Flow (Auto Execution on Startup)
+
+#### 🔹 Step 1: Generate Webhook
+
+POST:
+https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA
+
+Response:
+
+* Webhook URL
+* Access Token
+
+---
+
+#### 🔹 Step 2: Solve SQL Problem
+
+Write SQL query based on:
+
+* Employee data
+* Salary
+* Department
+* Filtering & sorting logic
+
+---
+
+#### 🔹 Step 3: Submit Answer
+
+POST to webhook URL
+
+Headers:
+Authorization: <accessToken>
+
+Body: <final SQL query>
+
+---
+
+## ▶️ How to Run Project
+
+### 1. Build Project
+
+mvn clean install
+
+### 2. Run Application
+
+mvn spring-boot:run
+
+---
+
+## ✅ Final Output
+
+* ✔ Webhook URL generated
+* ✔ Access token received
+* ✔ SQL query submitted successfully
+* ✔ Response: "success": true
+
+---
+
+## 🎯 Key Features
+
+* REST API integration using Spring Boot
+* Constructor-based Dependency Injection
+* Fully automated workflow
+* Real-time SQL query submission
+
+---
+
+## 🏁 Learning Outcomes
+
+* Real-world API handling
+* Spring Boot architecture
+* SQL optimization
+* Debugging & backend flow
+
+---
+
+## 👨‍💻 Author
+
+**Anuj Ganesh Kanchan**
+
+---
+
+## 🔥 Conclusion
+
+A complete end-to-end Spring Boot automation project that integrates API + SQL + backend processing into a real-world workflow.
+
