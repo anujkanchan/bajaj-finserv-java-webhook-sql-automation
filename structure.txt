@@ -1,53 +1,85 @@
-Folder PATH listing for volume Windows-SSD
-Volume serial number is 7664-23A7
-C:.
-|   .gitattributes
-|   .gitignore
-|   HELP.md
-|   mvnw
-|   mvnw.cmd
-|   pom.xml
-|   structure.txt
-|   
-+---.mvn
-|   \---wrapper
-|           maven-wrapper.properties
-|           
-+---.vscode
-|       settings.json
-|       
-+---src
-|   +---main
-|   |   +---java
-|   |   |   \---com
-|   |   |       \---example
-|   |   |           \---webhookapp
-|   |   |                   WebhookappApplication.java
-|   |   |                   
-|   |   \---resources
-|   |       |   application.properties
-|   |       |   
-|   |       +---static
-|   |       \---templates
-|   \---test
-|       \---java
-|           \---com
-|               \---example
-|                   \---webhookapp
-|                           WebhookappApplicationTests.java
-|                           
-\---target
-    +---classes
-    |   |   application.properties
-    |   |   
-    |   \---com
-    |       \---example
-    |           \---webhookapp
-    |                   WebhookappApplication.class
-    |                   
-    \---test-classes
-        \---com
-            \---example
-                \---webhookapp
-                        WebhookappApplicationTests.class
-                        
+│   structure.txt
+│   
+├───.github
+│   └───java-upgrade
+│       │   .gitignore
+│       │   
+│       └───hooks
+│           └───scripts
+│                   recordToolUse.ps1
+│                   recordToolUse.sh
+│                   
+└───demo
+    │   .gitattributes
+    │   .gitignore
+    │   HELP.md
+    │   mvnw
+    │   mvnw.cmd
+    │   pom.xml
+    │   structure.txt
+    │   WebhookRequest.java
+    │   WebhookResponse.java
+    │   
+    ├───.mvn
+    │   └───wrapper
+    │           maven-wrapper.properties
+    │           
+    ├───src
+    │   ├───main
+    │   │   ├───java
+    │   │   │   ├───com
+    │   │   │   │   └───example
+    │   │   │   │       └───demo
+    │   │   │   │               DemoApplication.java
+    │   │   │   │               
+    │   │   │   └───service
+    │   │   │           ApiService.java
+    │   │   │           
+    │   │   └───resources
+    │   │       │   application.properties
+    │   │       │   
+    │   │       ├───static
+    │   │       └───templates
+    │   └───test
+    │       └───java
+    │           └───com
+    │               └───example
+    │                   └───demo
+    │                           DemoApplicationTests.java
+    │                           
+    └───target
+        ├───classes
+        │   │   application.properties
+        │   │   
+        │   ├───com
+        │   │   └───example
+        │   │       └───demo
+        │   │           │   DemoApplication.class
+        │   │           │   
+        │   │           └───service
+        │   │                   ApiService.class
+        │   │                   
+        │   └───service
+        │           ApiService.class
+        │           
+        ├───generated-sources
+        │   └───annotations
+        ├───generated-test-sources
+        │   └───test-annotations
+        ├───maven-status
+        │   └───maven-compiler-plugin
+        │       ├───compile
+        │       │   └───default-compile
+        │       │           createdFiles.lst
+        │       │           inputFiles.lst
+        │       │           
+        │       └───testCompile
+        │           └───default-testCompile
+        │                   createdFiles.lst
+        │                   inputFiles.lst
+        │                   
+        └───test-classes
+            └───com
+                └───example
+                    └───demo
+                            DemoApplicationTests.class
