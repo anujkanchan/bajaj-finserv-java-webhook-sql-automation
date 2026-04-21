@@ -51,4 +51,28 @@ Startup → Generate Webhook → Receive Token → Solve SQL → Send Response �
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone repository
+```bash
+git clone https://github.com/your-username/bajaj-finserv-java-webhook-sql-automation.git
+
+
+cd bajaj-finserv-java-webhook-sql-automation
+
+mvn clean
+mvn spring-boot:run
+
+{
+  "success": true,
+  "message": "Webhook processed successfully"
+}
+
+
+👨‍💻 Author
+
+Anuj Ganesh Kanchan
+Java Backend Developer | Spring Boot Enthusiast
